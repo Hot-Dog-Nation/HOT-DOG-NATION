@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravemark — Creative Marketing Agency | Traditional & Digital</title>
+  <meta name="description" content="Ravemark is a full-service creative agency bridging high-impact traditional marketing with precision digital performance.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ravemark — We Make Brands Impossible to Ignore">
+  <meta property="og:description" content="Independent creative agency bridging traditional marketing with precision digital performance.">
+  <meta property="og:image" content="assets/images/ravemark-logo-dark.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="assets/images/ravemark-logo-dark.png">
+
+  <!-- FontAwesome Icons for clean UI symbols -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Instant Theme Script to prevent flash of wrong theme -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('ravemark-theme');
+      if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation (with Dark/Light Mode Toggle & Enlarged Logo)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#hero" class="nav-brand" aria-label="Ravemark Home">
+        <!-- Enlarged Theme-Adaptive Logos (1.5x - 2x) -->
+        <img src="assets/images/ravemark-logo-dark.png" alt="Ravemark Logo" class="nav-logo-img logo-dark-version">
+        <img src="assets/images/ravemark-logo-white.png" alt="Ravemark Logo" class="nav-logo-img logo-white-version">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Capabilities</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#team" class="nav-link">Leadership</a></li>
+        <li><a href="#stats" class="nav-link">Impact</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Items & Theme Switcher -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <i class="fas fa-moon" id="themeToggleIcon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Navigation Menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div>
+      <div style="margin-bottom: 36px;">
+        <img src="assets/images/ravemark-logo-dark.png" alt="Ravemark" class="logo-dark-version" style="height: 46px; width: auto;">
+        <img src="assets/images/ravemark-logo-white.png" alt="Ravemark" class="logo-white-version" style="height: 46px; width: auto;">
+      </div>
+      <ul class="mobile-nav-menu">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#services" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Selected Work</a></li>
+        <li><a href="#team" class="mobile-nav-link">Leadership</a></li>
+        <li><a href="#stats" class="mobile-nav-link">Impact</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">
+        <span>Start A Project</span>
+      </a>
+      <div style="margin-top: 20px; font-size: 0.84rem; color: var(--text-muted);">
+        +91 7007738350 &bull; ravemarkhr@gmail.com
+      </div>
+    </div>
+  </div>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- ==========================================================================
+       Hero Section (Prominent Logo Anchor + Digital Raisers Structure)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-content">
+      
+      <!-- Prominent Ravemark Logo Anchor in Hero -->
+      <div class="hero-logo-anchor">
+        <img src="assets/images/ravemark-logo-dark.png" alt="Ravemark Agency" class="hero-logo-img logo-dark-version">
+        <img src="assets/images/ravemark-logo-white.png" alt="Ravemark Agency" class="hero-logo-img logo-white-version">
+      </div>
+
+      <div class="hero-pill-badge">
+        <span class="badge-icon">&#9679;</span>
+        <span>Full-Service Agency &bull; Traditional & Digital Marketing</span>
+      </div>
+
+      <h1 class="hero-title">
+        We make brands <br>
+        <span class="text-lime">impossible to ignore.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Ravemark unites the tangible stature of traditional branding with high-velocity digital performance. We build full-funnel growth engines that command cultural authority and generate scalable commercial return.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <span>Let's Talk</span>
+          <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+        </a>
+        <a href="#portfolio" class="btn btn-secondary">
+          <span>Selected Work</span>
+        </a>
+      </div>
+
+      <!-- Trust & Scale Bar (Digital Raisers Flow) -->
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <div class="val">150+</div>
+          <div class="lbl">Projects Delivered</div>
+        </div>
+        <div class="trust-item">
+          <div class="val">50+</div>
+          <div class="lbl">Brand Partners</div>
+        </div>
+        <div class="trust-item">
+          <div class="val">360°</div>
+          <div class="lbl">Integrated Model</div>
+        </div>
+        <div class="trust-item">
+          <div class="val">4.8x</div>
+          <div class="lbl">Average Client ROAS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Us Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Agency Story Narrative -->
+        <div class="about-narrative">
+          <div>
+            <span class="section-tag">01 / Agency Profile</span>
+            <h2 class="section-title">
+              Bridging physical presence and digital precision.
+            </h2>
+          </div>
+          <p>
+            The modern agency landscape is fractured: traditional ad shops struggle with algorithmic attribution, while digital marketing shops produce ephemeral feed content without building genuine brand stature.
+          </p>
+          <p>
+            <strong>Ravemark was created to bridge this divide.</strong> We believe market leadership happens at the intersection of tangible authority and digital speed. By uniting outdoor media, experiential activations, and tactile collateral with performance advertising, search dominance, and conversion technology, we deliver complete, sustainable growth.
+          </p>
+
+          <!-- Leadership Quote -->
+          <div class="quote-card">
+            <p class="quote-text">
+              "In an era of relentless noise, visibility alone is insufficient. Enduring brands require both the authority of real-world stature and the agility of digital performance. That is the standard we build for every client."
+            </p>
+            <div class="quote-author-info">
+              <h4>Virat Singh</h4>
+              <p>CEO & Founder, Ravemark</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: The Synergy Model -->
+        <div class="synergy-card">
+          <div class="synergy-header">
+            <span class="section-tag">The 360° Framework</span>
+            <h3>Integrated Growth Architecture</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">How offline prestige directly amplifies digital efficiency.</p>
+          </div>
+
+          <div class="synergy-columns">
+            <div class="synergy-col">
+              <div class="synergy-col-title">
+                <i class="fas fa-layer-group"></i>
+                <span>Traditional Stature</span>
+              </div>
+              <ul class="synergy-list">
+                <li><i class="fas fa-minus"></i> Large-Format OOH & Transit Takeovers</li>
+                <li><i class="fas fa-minus"></i> Experiential Brand Activations</li>
+                <li><i class="fas fa-minus"></i> Tactile Collateral & Visual Identity</li>
+                <li><i class="fas fa-minus"></i> National Editorial & Tier-1 PR</li>
+              </ul>
+            </div>
+
+            <div class="synergy-col">
+              <div class="synergy-col-title">
+                <i class="fas fa-chart-line"></i>
+                <span>Digital Velocity</span>
+              </div>
+              <ul class="synergy-list">
+                <li><i class="fas fa-minus"></i> Full-Funnel Paid Acquisition (Meta & Google)</li>
+                <li><i class="fas fa-minus"></i> Search Authority & Keyword Domination</li>
+                <li><i class="fas fa-minus"></i> Creator Collaborations & Short-Form Content</li>
+                <li><i class="fas fa-minus"></i> High-Conversion Digital Platforms</li>
+              </ul>
+            </div>
+
+            <div class="synergy-connector">
+              <span>Full-Funnel Ownership &bull; Brand Equity Drives Low CAC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services Section (Clean Minimal Grid - Digital Raisers Structure)
+       ========================================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div style="margin-bottom: 50px;">
+        <span class="section-tag">02 / Capabilities</span>
+        <h2 class="section-title">
+          Full-service execution across the brand lifecycle.
+        </h2>
+        <p class="section-subtitle">
+          From nationwide outdoor campaigns to high-converting performance funnels, our multidisciplinary team handles every touchpoint.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="services-tabs">
+        <button class="tab-btn active" data-target-type="all">All Disciplines</button>
+        <button class="tab-btn" data-target-type="traditional">Traditional Marketing</button>
+        <button class="tab-btn" data-target-type="digital">Digital Marketing</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        
+        <!-- Card 1 -->
+        <div class="service-card" data-service-type="traditional">
+          <div>
+            <span class="service-badge">Traditional Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-pen-fancy"></i></div>
+            <h3 class="service-title">Brand Identity & Strategy</h3>
+            <p class="service-desc">
+              Comprehensive brand architecture, typography standards, tactile design systems, and guidelines that establish category authority.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Visual Systems & Typography</li>
+            <li><i class="fas fa-chevron-right"></i> Brand Archetype & Tone of Voice</li>
+            <li><i class="fas fa-chevron-right"></i> Packaging & Corporate Collateral</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" data-service-type="traditional">
+          <div>
+            <span class="service-badge">Traditional Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-building"></i></div>
+            <h3 class="service-title">Outdoor & OOH Advertising</h3>
+            <p class="service-desc">
+              Prime highway hoardings, airport backlit monoliths, and urban transit takeovers engineered for high-impact unskippable recall.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Metro & Airport Hub Takeovers</li>
+            <li><i class="fas fa-chevron-right"></i> Large-Format Monolithic Billboards</li>
+            <li><i class="fas fa-chevron-right"></i> Fleet Branding & Transit Wraps</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-service-type="traditional">
+          <div>
+            <span class="service-badge">Traditional Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-calendar-star"></i></div>
+            <h3 class="service-title">Experiential Events & Activations</h3>
+            <p class="service-desc">
+              Immersive launch galas, retail pop-up environments, and corporate summits that foster authentic real-world connections.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Flagship Launch Production</li>
+            <li><i class="fas fa-chevron-right"></i> Immersive Pop-Up Environments</li>
+            <li><i class="fas fa-chevron-right"></i> Turnkey Event Logistics & Scenography</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" data-service-type="traditional">
+          <div>
+            <span class="service-badge">Traditional Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-newspaper"></i></div>
+            <h3 class="service-title">Public Relations & Media</h3>
+            <p class="service-desc">
+              Editorial placements, executive thought leadership, and broadcast coverage across tier-1 national and trade publications.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> National Business & Lifestyle Press</li>
+            <li><i class="fas fa-chevron-right"></i> Executive Profiling & Media Training</li>
+            <li><i class="fas fa-chevron-right"></i> Strategic Communications & Syndication</li>
+          </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card" data-service-type="digital">
+          <div>
+            <span class="service-badge">Digital Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-bullseye"></i></div>
+            <h3 class="service-title">Performance Marketing & Ads</h3>
+            <p class="service-desc">
+              Data-engineered acquisition funnels across Meta, Google Search, and LinkedIn calibrated for lowest CAC and maximum lifetime value.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Search & Social Ad Architecture</li>
+            <li><i class="fas fa-chevron-right"></i> Dynamic Creative Testing</li>
+            <li><i class="fas fa-chevron-right"></i> Real-Time ROAS Optimization</li>
+          </ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card" data-service-type="digital">
+          <div>
+            <span class="service-badge">Digital Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-users-viewfinder"></i></div>
+            <h3 class="service-title">Social Strategy & Creators</h3>
+            <p class="service-desc">
+              Editorial short-form video production, community storytelling, and high-engagement creator collaborations.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Editorial Short-Form Video Direction</li>
+            <li><i class="fas fa-chevron-right"></i> Creator Discovery & Campaign Briefing</li>
+            <li><i class="fas fa-chevron-right"></i> Community Growth & Brand Advocacy</li>
+          </ul>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card" data-service-type="digital">
+          <div>
+            <span class="service-badge">Digital Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-magnifying-glass"></i></div>
+            <h3 class="service-title">SEO & Search Dominance</h3>
+            <p class="service-desc">
+              Technical search architecture, high-authority backlink development, and keyword topic clusters that capture commercial intent.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Technical Architecture Audits</li>
+            <li><i class="fas fa-chevron-right"></i> High-Intent Keyword Strategy</li>
+            <li><i class="fas fa-chevron-right"></i> Authority Link Acquisition</li>
+          </ul>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card" data-service-type="digital">
+          <div>
+            <span class="service-badge">Digital Marketing</span>
+            <div class="service-icon-wrapper"><i class="fas fa-code"></i></div>
+            <h3 class="service-title">High-Speed Digital Platforms</h3>
+            <p class="service-desc">
+              Custom responsive websites and web applications built with sub-second performance, strict typography, and conversion focus.
+            </p>
+          </div>
+          <ul class="service-features">
+            <li><i class="fas fa-chevron-right"></i> Bespoke Web Experiences</li>
+            <li><i class="fas fa-chevron-right"></i> CRM & Pixel Analytics Integration</li>
+            <li><i class="fas fa-chevron-right"></i> Mobile-First Responsive Systems</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Portfolio / Selected Work
+       ========================================================================== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div style="margin-bottom: 50px;">
+        <span class="section-tag">03 / Case Studies</span>
+        <h2 class="section-title">
+          Selected work and measurable outcomes.
+        </h2>
+        <p class="section-subtitle">
+          A track record of high-recall creative direction paired with quantifiable commercial return.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="portfolio-filter-bar">
+        <button class="filter-pill active" data-filter="all">All Projects</button>
+        <button class="filter-pill" data-filter="digital">Digital Growth</button>
+        <button class="filter-pill" data-filter="traditional">Brand & Traditional</button>
+        <button class="filter-pill" data-filter="ooh">OOH & Experiential</button>
+        <button class="filter-pill" data-filter="tech">Web & Tech</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="portfolio-grid">
+        
+        <!-- Case 1 -->
+        <div class="portfolio-item" data-category="traditional" data-study-id="lumina-rebrand">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-cubes" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">Traditional &bull; Rebrand</div>
+            <div class="portfolio-metric-badge">+280% Recall</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Lumina Systems Rebrand & Metro Blitz</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              Comprehensive corporate visual architecture paired with a synchronized 6-city metro transit & billboard campaign.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">OOH & Identity</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="portfolio-item" data-category="digital" data-study-id="apex-digital">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-charging-station" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">Digital &bull; Performance</div>
+            <div class="portfolio-metric-badge">4.8x ROAS</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Apex Motors Performance Funnel</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              Hyperlocal geo-targeted Meta & Google Performance Max campaigns scaling premium EV test drive bookings nationwide.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">Performance Ads</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="portfolio-item" data-category="ooh" data-study-id="velvet-ooh">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-gem" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">OOH & Experiential</div>
+            <div class="portfolio-metric-badge">18K+ Footfalls</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Velvet & Oak Flagship Activation</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              Airport corridor monolith displays and a VIP luxury salon launch driving unprecedented opening-week affluent footfalls.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">Events & OOH</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="portfolio-item" data-category="digital" data-study-id="pulse-energy">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-bolt" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">Digital &bull; Creators</div>
+            <div class="portfolio-metric-badge">35M+ Views</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Pulse Energy Influencer Blitz</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              60+ creator sprint driving viral Instagram Reels challenges, massive retail sellouts, and 180k+ new social followers.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">Creator Marketing</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div class="portfolio-item" data-category="tech" data-study-id="horizon-web">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-laptop-code" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">Tech &bull; Platform</div>
+            <div class="portfolio-metric-badge">+142% Demos</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Horizon Pay High-Conversion Web</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              Sub-second fintech web experience featuring interactive ROI tools, 60fps micro-animations, and full CRM integration.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">Web & CRO</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div class="portfolio-item" data-category="traditional" data-study-id="aurora-pr">
+          <div class="portfolio-visual">
+            <div class="portfolio-canvas-placeholder">
+              <i class="fas fa-newspaper" style="font-size: 3rem; color: var(--text-dim);"></i>
+            </div>
+            <div class="portfolio-tag-overlay">Traditional &bull; PR</div>
+            <div class="portfolio-metric-badge">40+ Placements</div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-title">
+              <span>Aurora BioTech National Media PR</span>
+              <i class="fas fa-arrow-up-right"></i>
+            </h3>
+            <p class="portfolio-desc">
+              National launch positioning Aurora in top business dailies, broadcast TV news panels, and securing ₹4.5Cr in earned media.
+            </p>
+            <div class="portfolio-footer">
+              <span class="portfolio-category-label">PR & Earned Media</span>
+              <span class="portfolio-action-link">View Case Study &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Leadership Section
+       ========================================================================== -->
+  <section class="section" id="team">
+    <div class="container">
+      <div style="margin-bottom: 50px;">
+        <span class="section-tag">04 / Leadership</span>
+        <h2 class="section-title">
+          The team behind the strategy.
+        </h2>
+        <p class="section-subtitle">
+          Led by multidisciplinary partners combining creative brand direction, operational scale, and technical marketing systems.
+        </p>
+      </div>
+
+      <!-- Core Leadership Grid -->
+      <div class="team-leadership-grid">
+        
+        <!-- Virat Singh -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-img" style="background: var(--bg-surface-elevated); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">
+              VS
+            </div>
+          </div>
+          <h3 class="team-name">Virat Singh</h3>
+          <span class="team-role">CEO & Founder</span>
+          <p class="team-bio">
+            Strategist and agency founder guiding Ravemark's mission to bridge traditional brand stature with high-speed digital performance.
+          </p>
+          <div class="team-socials">
+            <a href="mailto:ravemarkhr@gmail.com" class="team-social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917007738350" class="team-social-icon" title="Call"><i class="fas fa-phone"></i></a>
+            <a href="https://instagram.com/rave-mark" target="_blank" rel="noopener" class="team-social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Prabhav Gaur -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-img" style="background: var(--bg-surface-elevated); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">
+              PG
+            </div>
+          </div>
+          <h3 class="team-name">Prabhav Gaur</h3>
+          <span class="team-role">Co-CEO</span>
+          <p class="team-bio">
+            Growth and operations architect managing multi-channel execution, strategic brand partnerships, and client delivery nationwide.
+          </p>
+          <div class="team-socials">
+            <a href="mailto:ravemarkhr@gmail.com" class="team-social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917007738350" class="team-social-icon" title="Call"><i class="fas fa-phone"></i></a>
+            <a href="https://instagram.com/rave-mark" target="_blank" rel="noopener" class="team-social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Souvik Gupta -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-img" style="background: var(--bg-surface-elevated); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--text-primary);">
+              SG
+            </div>
+          </div>
+          <h3 class="team-name">Souvik Gupta</h3>
+          <span class="team-role">CTO</span>
+          <p class="team-bio">
+            Systems engineer and technologist architecting Ravemark's ad-tech automation, tracking infrastructure, and web applications.
+          </p>
+          <div class="team-socials">
+            <a href="mailto:ravemarkhr@gmail.com" class="team-social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917007738350" class="team-social-icon" title="Call"><i class="fas fa-phone"></i></a>
+            <a href="https://instagram.com/rave-mark" target="_blank" rel="noopener" class="team-social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Extended Collective -->
+      <div class="large-team-banner">
+        <h3 class="large-team-title">
+          Backed by a multidisciplinary team of 30+ creators and strategists.
+        </h3>
+        <p class="large-team-desc">
+          An agile collective of media buyers, 3D motion designers, copywriters, and PR managers executing synchronized campaigns.
+        </p>
+
+        <button class="btn btn-secondary" id="toggleTeamBtn">
+          <span>Explore Extended Team (30+ Creators)</span>
+          <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
+        </button>
+
+        <!-- Extended Grid -->
+        <div class="extended-team-grid" id="extendedTeamGrid">
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-chart-pie"></i></div>
+            <div class="mini-member-info">
+              <h5>Aakash Verma</h5>
+              <p>Head of Performance Marketing</p>
+            </div>
+          </div>
+
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-pencil"></i></div>
+            <div class="mini-member-info">
+              <h5>Rhea Mathur</h5>
+              <p>Creative Director & Brand Lead</p>
+            </div>
+          </div>
+
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-broadcast-tower"></i></div>
+            <div class="mini-member-info">
+              <h5>Karan Singhania</h5>
+              <p>Lead OOH & Media Buyer</p>
+            </div>
+          </div>
+
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-film"></i></div>
+            <div class="mini-member-info">
+              <h5>Devika Sen</h5>
+              <p>Senior Motion & 3D Designer</p>
+            </div>
+          </div>
+
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-newspaper"></i></div>
+            <div class="mini-member-info">
+              <h5>Nikhil Deshmukh</h5>
+              <p>PR & Corporate Communications</p>
+            </div>
+          </div>
+
+          <div class="mini-member-card">
+            <div class="mini-member-avatar"><i class="fas fa-code"></i></div>
+            <div class="mini-member-info">
+              <h5>Ananya Iyer</h5>
+              <p>Senior Full-Stack Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Impact & Stats Section (Animated Counters - Digital Raisers Style)
+       ========================================================================== -->
+  <section class="section" id="stats">
+    <div class="container">
+      <div style="margin-bottom: 50px;">
+        <span class="section-tag">05 / Track Record</span>
+        <h2 class="section-title">
+          Commercial growth measured by business outcomes.
+        </h2>
+        <p class="section-subtitle">
+          Accountable delivery across enterprise B2B, consumer luxury, and venture-backed scaleups.
+        </p>
+      </div>
+
+      <!-- Live Count-Up Grid -->
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number" data-target="150">
+            <span class="counter-value">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-number" data-target="50">
+            <span class="counter-value">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-number" data-target="5">
+            <span class="counter-value">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Years of Impact</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-number" data-target="98">
+            <span class="counter-value">0</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Client Retention</div>
+        </div>
+      </div>
+
+      <!-- 4 Pillars -->
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01 / INTEGRATION</div>
+          <h4>360° Hybrid DNA</h4>
+          <p>Uniting offline brand authority with online conversion velocity in a single unified campaign architecture.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">02 / ATTRIBUTION</div>
+          <h4>Full Accountability</h4>
+          <p>Every marketing rupee tracked against pipeline velocity, blended acquisition cost, and revenue impact.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">03 / DISTINCTION</div>
+          <h4>Editorial Craft</h4>
+          <p>Rejecting generic corporate templates to craft distinct, memorable visual identities that stand out.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">04 / EXECUTION</div>
+          <h4>Rapid Deployment</h4>
+          <p>Institutional turnaround from strategic brief to multi-city billboard rollouts and live ad engines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Testimonials Carousel
+       ========================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div style="margin-bottom: 40px;">
+        <span class="section-tag">06 / Endorsements</span>
+        <h2 class="section-title">
+          Partner perspectives.
+        </h2>
+      </div>
+
+      <div class="testimonials-slider-wrapper">
+        <div class="testimonials-track" id="testimonialTrack">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-quote">
+                "Ravemark bridged our metro billboard launch with a synchronized digital acquisition funnel. We recorded a 3.4x surge in qualified inbound pipeline within the initial 60 days."
+              </p>
+              <div class="testimonial-client">
+                <div class="testimonial-author-meta">
+                  <div class="client-avatar">RK</div>
+                  <div class="client-info">
+                    <h4>Rohit Kulkarni</h4>
+                    <p>Chief Marketing Officer, Lumina Systems</p>
+                  </div>
+                </div>
+                <div class="client-campaign-tag">OOH + Digital Blitz</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-quote">
+                "Working with Virat, Prabhav, and Souvik's team has been transformative. Their performance rigor combined with bold creative direction increased electric vehicle test drives by over 400%."
+              </p>
+              <div class="testimonial-client">
+                <div class="testimonial-author-meta">
+                  <div class="client-avatar">AM</div>
+                  <div class="client-info">
+                    <h4>Ananya Mehra</h4>
+                    <p>VP of Growth, Apex Mobility</p>
+                  </div>
+                </div>
+                <div class="client-campaign-tag">Performance Marketing</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-quote">
+                "For luxury fashion, tactile presence is everything. Ravemark's airport installations and launch curation gave our label the commanding stature it required. They deliver on every metric."
+              </p>
+              <div class="testimonial-client">
+                <div class="testimonial-author-meta">
+                  <div class="client-avatar">SK</div>
+                  <div class="client-info">
+                    <h4>Siddharth Kapoor</h4>
+                    <p>Managing Director, Velvet & Oak</p>
+                  </div>
+                </div>
+                <div class="client-campaign-tag">Experiential & PR</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p class="testimonial-quote">
+                "The creator campaign Ravemark orchestrated delivered 35 million impressions across Instagram in 72 hours, generating unprecedented retail stockouts across key metro stores."
+              </p>
+              <div class="testimonial-client">
+                <div class="testimonial-author-meta">
+                  <div class="client-avatar">TG</div>
+                  <div class="client-info">
+                    <h4>Tanvi Gupta</h4>
+                    <p>Co-Founder, Pulse Nutrition</p>
+                  </div>
+                </div>
+                <div class="client-campaign-tag">Influencer Strategy</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-arrow" id="sliderPrevBtn" aria-label="Previous Testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-arrow" id="sliderNextBtn" aria-label="Next Testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section class="section" id="contact" style="border-bottom: none;">
+    <div class="container">
+      <div style="margin-bottom: 50px;">
+        <span class="section-tag">07 / Inquiries</span>
+        <h2 class="section-title">
+          Let's discuss your next phase of growth.
+        </h2>
+        <p class="section-subtitle">
+          Contact our team directly or submit your project brief below to begin the consultation.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Channels -->
+        <div class="contact-info-panel">
+          
+          <a href="tel:+917007738350" class="contact-channel-card">
+            <div class="channel-icon-box">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="channel-meta">
+              <h4>Direct Telephone</h4>
+              <div class="channel-value">+91 7007738350</div>
+              <span class="channel-sub">Monday &ndash; Saturday, 9am &ndash; 8pm IST</span>
+            </div>
+          </a>
+
+          <a href="mailto:ravemarkhr@gmail.com" class="contact-channel-card">
+            <div class="channel-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="channel-meta">
+              <h4>Official Email</h4>
+              <div class="channel-value">ravemarkhr@gmail.com</div>
+              <span class="channel-sub">Inquiries & Brief Submissions</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/rave-mark" target="_blank" rel="noopener" class="contact-channel-card">
+            <div class="channel-icon-box">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="channel-meta">
+              <h4>Instagram</h4>
+              <div class="channel-value">@rave-mark</div>
+              <span class="channel-sub">Agency updates & case highlights</span>
+            </div>
+          </a>
+
+          <div class="contact-channel-card" style="cursor: default;">
+            <div class="channel-icon-box">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="channel-meta">
+              <h4>Presence</h4>
+              <div class="channel-value">Pan-India Operations</div>
+              <span class="channel-sub">Mumbai &bull; Delhi NCR &bull; Bengaluru</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-container">
+          <form id="ravemarkContactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="Aryan Sharma" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Work Email *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="aryan@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number *</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactCompany">Company / Organization</label>
+                <input type="text" id="contactCompany" class="form-control" placeholder="Apex Mobility">
+              </div>
+            </div>
+
+            <!-- Service Selection -->
+            <div class="form-group">
+              <label class="form-label">Engagement Focus</label>
+              <input type="hidden" id="selectedServiceInput" value="360 Hybrid Growth">
+              <div class="service-select-group">
+                <div class="service-choice-pill selected" data-value="360 Hybrid Growth">360° Hybrid (Traditional + Digital)</div>
+                <div class="service-choice-pill" data-value="Digital Performance">Digital Performance</div>
+                <div class="service-choice-pill" data-value="OOH & Branding">Traditional & OOH</div>
+                <div class="service-choice-pill" data-value="Web Platform">Web Platform</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Project Brief *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Describe your objectives, current timeline, and key milestones..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">
+              <span>Submit Project Brief</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <img src="assets/images/ravemark-logo-dark.png" alt="Ravemark" class="footer-logo-img logo-dark-version">
+          <img src="assets/images/ravemark-logo-white.png" alt="Ravemark" class="footer-logo-img logo-white-version">
+          <p>
+            Ravemark is an independent creative agency uniting high-impact traditional marketing with precision digital performance.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/rave-mark" target="_blank" rel="noopener" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ravemarkhr@gmail.com" class="footer-social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917007738350" class="footer-social-btn" title="Phone"><i class="fas fa-phone"></i></a>
+            <a href="#" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Agency</a></li>
+            <li><a href="#services" class="footer-link">Capabilities</a></li>
+            <li><a href="#portfolio" class="footer-link">Case Studies</a></li>
+            <li><a href="#team" class="footer-link">Leadership</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Expertise -->
+        <div>
+          <h4 class="footer-col-title">Expertise</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Outdoor & OOH</a></li>
+            <li><a href="#services" class="footer-link">Performance Marketing</a></li>
+            <li><a href="#services" class="footer-link">Visual Identity</a></li>
+            <li><a href="#services" class="footer-link">Search Dominance</a></li>
+            <li><a href="#services" class="footer-link">Experiential Events</a></li>
+            <li><a href="#services" class="footer-link">Web Engineering</a></li>
+          </ul>
+        </div>
+
+        <!-- Dispatch -->
+        <div>
+          <h4 class="footer-col-title">The Dispatch</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            Quarterly insights on commercial marketing strategy and cultural brand positioning.
+          </p>
+          <form class="footer-newsletter-form" id="newsletterForm">
+            <input type="email" class="footer-newsletter-input" placeholder="Work email..." required>
+            <button type="submit" class="footer-newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Ravemark Agency. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#hero">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Case Study Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalDynamicContent">
+        <!-- Loaded dynamically via portfolio.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fas fa-check"></i>
+    <div id="toastMessage">Inquiry transmitted successfully.</div>
+  </div>
+
+  <!-- Floating Back to Top -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Clean Modular Scripts -->
+  <script src="assets/js/counters.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Tab filter for Capabilities -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const serviceCards = document.querySelectorAll('.service-card');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const targetType = btn.getAttribute('data-target-type');
+          serviceCards.forEach(card => {
+            const cardType = card.getAttribute('data-service-type');
+            if (targetType === 'all' || cardType === targetType) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
