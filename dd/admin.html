@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal — Hot Dog Nation | Law Gate, Phagwara</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-amber-50 text-neutral-900 font-body min-h-screen">
+
+  <!-- ================= LOGIN SCREEN ================= -->
+  <div id="adminLoginScreen" class="fixed inset-0 bg-neutral-900 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl border-4 border-black p-8 max-w-md w-full retro-shadow-lg text-center">
+      <img src="assets/images/brand-logo.png" alt="Hot Dog Nation" class="w-36 mx-auto mb-4 drop-shadow">
+      <h2 class="font-brand text-2xl text-neutral-900 mb-1">RESTAURANT ADMIN PORTAL</h2>
+      <p class="text-xs text-neutral-600 mb-6">Law Gate, Phagwara • Manage Menu, Prices & Contacts</p>
+
+      <form id="adminLoginForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-left uppercase tracking-wider mb-1">Enter Master Passcode</label>
+          <input type="password" id="adminPasscode" placeholder="Default: admin123" required class="w-full px-4 py-3 border-2 border-neutral-300 rounded-xl focus:border-red-600 focus:outline-none font-bold text-center text-lg">
+        </div>
+        <div id="adminLoginError" class="text-xs text-red-600 font-bold hidden">
+          Incorrect passcode. (Try: admin123)
+        </div>
+        <button type="submit" class="w-full retro-btn retro-btn-yellow py-3 rounded-xl text-base font-brand">
+          ENTER CONTROL PANEL
+        </button>
+      </form>
+      <div class="mt-6 pt-4 border-t border-neutral-200">
+        <a href="index.html" class="text-xs font-bold text-neutral-500 hover:text-red-600 flex items-center justify-center gap-1">
+          <i class="fa-solid fa-arrow-left"></i> Return to Main Website
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= APP CONTAINER ================= -->
+  <div id="adminAppContainer" class="hidden min-h-screen flex flex-col">
+    <!-- Admin Top Bar -->
+    <header class="bg-neutral-900 text-white border-b-4 border-yellow-400 py-3 px-4 sm:px-8 flex items-center justify-between sticky top-0 z-40">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/brand-logo.png" alt="Logo" class="h-10 w-auto bg-white rounded p-1">
+        <div>
+          <h1 class="font-brand text-lg text-yellow-400 leading-none">HOT DOG NATION</h1>
+          <span class="text-[10px] text-neutral-400 font-semibold tracking-wider uppercase">Owner & Manager Console</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="index.html" target="_blank" class="retro-btn retro-btn-yellow text-xs px-3 py-1.5 rounded-lg">
+          <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> View Live Site
+        </a>
+        <button id="adminLogoutBtn" class="bg-neutral-800 hover:bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-neutral-700 transition-colors">
+          <i class="fa-solid fa-arrow-right-from-bracket mr-1"></i> Logout
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Admin Dashboard -->
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
+      
+      <!-- Top Action Strip -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-white p-5 rounded-2xl border-2 border-neutral-800 retro-shadow">
+        <div>
+          <h2 class="font-brand text-2xl text-neutral-900">RESTAURANT SETTINGS & MENU</h2>
+          <p class="text-xs text-neutral-600">Update prices, add new items (including desserts), and configure WhatsApp numbers in real time.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="addNewItemBtn" class="retro-btn retro-btn-red text-xs px-4 py-2 rounded-lg font-brand">
+            <i class="fa-solid fa-plus mr-1.5"></i> Add New Menu Item
+          </button>
+          <button id="resetDefaultsBtn" class="bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs font-bold px-3 py-2 rounded-lg border border-neutral-300">
+            <i class="fa-solid fa-rotate-left mr-1"></i> Reset to Defaults
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="flex border-b-2 border-neutral-300 gap-2">
+        <button id="tabBtnMenu" class="px-5 py-2.5 font-brand text-sm border-b-4 border-red-600 text-red-600 bg-white rounded-t-xl">
+          <i class="fa-solid fa-utensils mr-2"></i> Menu Items & Prices
+        </button>
+        <button id="tabBtnSettings" class="px-5 py-2.5 font-brand text-sm border-b-4 border-transparent text-neutral-600 hover:text-black bg-neutral-100 rounded-t-xl">
+          <i class="fa-solid fa-gear mr-2"></i> Restaurant Contact & Info
+        </button>
+      </div>
+
+      <!-- Tab 1: Menu Items Management -->
+      <section id="tabContentMenu" class="space-y-4">
+        <!-- Filter Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-3 bg-white p-4 rounded-xl border border-neutral-300">
+          <div class="flex items-center gap-2">
+            <label class="text-xs font-bold uppercase text-neutral-500">Filter Category:</label>
+            <select id="adminCategoryFilter" class="text-xs font-bold bg-neutral-50 border border-neutral-300 rounded-lg px-3 py-2 focus:outline-none">
+              <option value="all">All Categories</option>
+              <option value="combos">Signature Combos</option>
+              <option value="hotdogs">Hot Dogs</option>
+              <option value="burgers">Burgers</option>
+              <option value="sandwiches">Sandwiches</option>
+              <option value="wraps">Wraps & Twisters</option>
+              <option value="dimsums">Dimsums</option>
+              <option value="snacks">Snacks</option>
+              <option value="fries">Fries & Corn</option>
+              <option value="waffles">Waffles</option>
+              <option value="mocktails">Mocktails</option>
+              <option value="beverages">Shakes & Coffee</option>
+              <option value="desserts">Desserts</option>
+            </select>
+          </div>
+          <div class="text-xs text-neutral-500 font-semibold" id="adminMenuStats">
+            Showing all items
+          </div>
+        </div>
+
+        <!-- Items Table -->
+        <div class="bg-white rounded-2xl border-2 border-neutral-800 retro-shadow overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-neutral-900 text-yellow-400 font-brand text-xs uppercase tracking-wider">
+                  <th class="p-3.5">Image</th>
+                  <th class="p-3.5">Name</th>
+                  <th class="p-3.5">Category</th>
+                  <th class="p-3.5">Diet</th>
+                  <th class="p-3.5">Price (₹)</th>
+                  <th class="p-3.5">Bestseller</th>
+                  <th class="p-3.5 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminMenuTableBody" class="divide-y divide-neutral-200">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab 2: Restaurant Contact & Store Settings -->
+      <section id="tabContentSettings" class="hidden">
+        <form id="restaurantSettingsForm" class="bg-white p-6 sm:p-8 rounded-2xl border-2 border-neutral-800 retro-shadow space-y-6">
+          <h3 class="font-brand text-xl text-neutral-900 border-b border-neutral-200 pb-3">
+            <i class="fa-solid fa-store text-red-600 mr-2"></i> Restaurant Contact & Online Ordering Config
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Restaurant Name</label>
+              <input type="text" id="settingName" class="w-full p-3 border border-neutral-300 rounded-xl font-bold focus:border-red-600 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Tagline</label>
+              <input type="text" id="settingTagline" class="w-full p-3 border border-neutral-300 rounded-xl font-bold focus:border-red-600 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Phone Number (Display)</label>
+              <input type="text" id="settingPhone" class="w-full p-3 border border-neutral-300 rounded-xl font-bold focus:border-red-600 focus:outline-none" placeholder="+91 98765 43210">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">WhatsApp Number (Orders Recipient)</label>
+              <input type="text" id="settingWhatsapp" class="w-full p-3 border border-neutral-300 rounded-xl font-bold focus:border-red-600 focus:outline-none" placeholder="919876543210 (Country code + 10 digits)">
+              <span class="text-[11px] text-neutral-500">Do not include + or dashes here. E.g. 919876543210</span>
+            </div>
+
+            <div class="md:col-span-2">
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Full Restaurant Address</label>
+              <input type="text" id="settingAddress" class="w-full p-3 border border-neutral-300 rounded-xl font-medium focus:border-red-600 focus:outline-none" placeholder="Law Gate, Phagwara, Punjab, India">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Opening Hours</label>
+              <input type="text" id="settingHours" class="w-full p-3 border border-neutral-300 rounded-xl font-medium focus:border-red-600 focus:outline-none" placeholder="11:00 AM – 11:30 PM Daily">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Instagram Profile URL</label>
+              <input type="url" id="settingInstagram" class="w-full p-3 border border-neutral-300 rounded-xl font-medium focus:border-red-600 focus:outline-none" placeholder="https://instagram.com/hotdognation.in/">
+            </div>
+
+            <div class="md:col-span-2">
+              <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Top Announcement Bar Text</label>
+              <input type="text" id="settingAnnouncement" class="w-full p-3 border border-neutral-300 rounded-xl font-medium focus:border-red-600 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-neutral-200 flex justify-end">
+            <button type="submit" class="retro-btn retro-btn-yellow px-8 py-3 rounded-xl font-brand text-sm">
+              <i class="fa-solid fa-floppy-disk mr-2"></i> Save Restaurant Settings
+            </button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ================= ITEM MODAL (ADD / EDIT) ================= -->
+  <div id="itemEditModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl border-4 border-black p-6 sm:p-8 max-w-lg w-full retro-shadow-lg max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between mb-4 border-b pb-3">
+        <h4 id="itemModalTitle" class="font-brand text-xl text-neutral-900">Add Menu Item</h4>
+        <button id="closeItemModalBtn" class="text-neutral-500 hover:text-black font-bold text-xl">&times;</button>
+      </div>
+
+      <form id="itemEditForm" class="space-y-4">
+        <input type="hidden" id="editItemId">
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Item Name</label>
+          <input type="text" id="editItemName" required class="w-full p-2.5 border border-neutral-300 rounded-lg font-bold focus:border-red-600 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Category</label>
+            <select id="editItemCategory" required class="w-full p-2.5 border border-neutral-300 rounded-lg text-xs font-bold">
+              <option value="combos">Signature Combos</option>
+              <option value="hotdogs">Hot Dogs</option>
+              <option value="burgers">Burgers</option>
+              <option value="sandwiches">Sandwiches</option>
+              <option value="wraps">Wraps & Twisters</option>
+              <option value="dimsums">Dimsums</option>
+              <option value="snacks">Snacks</option>
+              <option value="fries">Fries & Corn</option>
+              <option value="waffles">Waffles</option>
+              <option value="mocktails">Mocktails</option>
+              <option value="beverages">Shakes & Coffee</option>
+              <option value="desserts">Desserts</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Price (₹ INR)</label>
+            <input type="number" id="editItemPrice" required min="0" step="5" class="w-full p-2.5 border border-neutral-300 rounded-lg font-bold focus:border-red-600 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Diet Type</label>
+            <select id="editItemIsVeg" class="w-full p-2.5 border border-neutral-300 rounded-lg text-xs font-bold">
+              <option value="true">100% Vegetarian</option>
+              <option value="false">Non-Vegetarian</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Bestseller Status</label>
+            <select id="editItemIsBestseller" class="w-full p-2.5 border border-neutral-300 rounded-lg text-xs font-bold">
+              <option value="false">Regular Item</option>
+              <option value="true">★ Bestseller Favorite</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Description</label>
+          <textarea id="editItemDescription" rows="3" required class="w-full p-2.5 border border-neutral-300 rounded-lg text-xs leading-relaxed focus:border-red-600 focus:outline-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Image URL</label>
+          <input type="url" id="editItemImage" required class="w-full p-2.5 border border-neutral-300 rounded-lg text-xs focus:border-red-600 focus:outline-none">
+        </div>
+
+        <div class="pt-4 border-t flex justify-end gap-3">
+          <button type="button" id="cancelItemModalBtn" class="px-4 py-2 text-xs font-bold text-neutral-600 hover:text-black">
+            Cancel
+          </button>
+          <button type="submit" class="retro-btn retro-btn-red text-xs px-6 py-2.5 rounded-lg font-brand">
+            Save Item
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

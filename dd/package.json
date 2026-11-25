@@ -1,0 +1,25 @@
+{
+  "name": "hot-dog-nation-website",
+  "version": "1.0.0",
+  "description": "Official Website for Hot Dog Nation - Every Bite Feels Enough | Law Gate, Phagwara, Punjab",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File serve.ps1 -Port 8085",
+    "serve": "powershell -ExecutionPolicy Bypass -File serve.ps1 -Port 8085",
+    "dev": "powershell -ExecutionPolicy Bypass -File serve.ps1 -Port 8085"
+  },
+  "keywords": [
+    "hot-dog-nation",
+    "restaurant",
+    "fast-food",
+    "phagwara",
+    "law-gate",
+    "lpu",
+    "hot-dogs",
+    "pastas",
+    "maggi"
+  ],
+  "author": "Hot Dog Nation",
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOT DOG NATION — Every Bite Feels Enough | Law Gate, Phagwara</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Hot Dog Nation at Law Gate, Phagwara, Punjab! Savor loaded hot dogs, authentic pastas, cheesy Maggi, fresh salads, and chilled drinks. Every bite feels enough!">
+  <meta name="keywords" content="Hot Dog Nation, Hot Dog Nation Phagwara, Best hot dogs in Phagwara, Hot dogs near Law Gate, Fast food near Law Gate, Pasta in Phagwara, Maggi near Law Gate, LPU food delivery">
+  <meta name="author" content="Hot Dog Nation">
+  <meta name="theme-color" content="#FFD94A">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="HOT DOG NATION — Every Bite Feels Enough">
+  <meta property="og:description" content="Craving loaded hot dogs, creamy pastas, or street-style Maggi at Law Gate, Phagwara? Taste the Nation's favorites today!">
+  <meta property="og:image" content="assets/images/brand-logo.png">
+  <meta property="og:url" content="https://hotdognation.in/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="assets/images/brand-logo.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandYellow: '#FFD94A',
+            brandYellowLight: '#FFF1A8',
+            brandYellowDark: '#E6BD22',
+            brandRed: '#E52B22',
+            brandRedDark: '#C01C14',
+            brandGreen: '#287C35',
+            brandDark: '#171717',
+            brandCream: '#FFF7DA'
+          },
+          fontFamily: {
+            brand: ['"Lilita One"', 'cursive', 'system-ui'],
+            display: ['"Righteous"', 'cursive', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Lilita One (Retro chunky display) + Righteous + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- LocalBusiness JSON-LD Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FastFoodRestaurant",
+    "name": "Hot Dog Nation",
+    "image": "assets/images/brand-logo.png",
+    "telephone": "+919876543210",
+    "url": "https://hotdognation.in",
+    "servesCuisine": ["Fast Food", "Hot Dogs", "Pastas", "Maggi"],
+    "priceRange": "₹50 - ₹250",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Law Gate",
+      "addressLocality": "Phagwara",
+      "addressRegion": "Punjab",
+      "postalCode": "144411",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "23:30"
+      }
+    ],
+    "menu": "https://hotdognation.in/#menu"
+  }
+  </script>
+</head>
+<body class="bg-[#FFFDF7] text-neutral-900 font-body antialiased">
+
+
+  <!-- ================= SECTION B: NAVIGATION BAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-neutral-900 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding & Live Open/Closed Indicator -->
+      <div class="flex items-center gap-3">
+        <a href="#hero" class="flex items-center gap-3 group">
+          <img src="assets/images/brand-logo.png" alt="Hot Dog Nation Logo" class="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        </a>
+        <div id="navStoreStatus" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-neutral-900 text-xs font-bold font-brand tracking-wide bg-emerald-100 text-emerald-800 retro-shadow">
+          <span class="status-dot w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="status-label">OPEN NOW</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 font-brand text-base tracking-wide uppercase text-neutral-800">
+        <a href="#hero" class="hover:text-brandRed transition-colors">Home</a>
+        <a href="#bestsellers" class="hover:text-brandRed transition-colors">Favourities</a>
+        <a href="#menu" class="hover:text-brandRed transition-colors">Our Menu</a>
+        <a href="#byo" class="text-brandGreen hover:text-emerald-700 transition-colors flex items-center gap-1">
+          <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Build Your Own
+        </a>
+        <a href="#about" class="hover:text-brandRed transition-colors">About Us</a>
+        <a href="#gallery" class="hover:text-brandRed transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-brandRed transition-colors">Location</a>
+      </nav>
+
+      <!-- Right CTAs: Cart & Order Button -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        
+        <!-- Cart Trigger Button -->
+        <button class="open-cart-btn relative bg-amber-50 hover:bg-amber-100 text-neutral-900 border-2 border-neutral-900 rounded-xl p-2.5 sm:px-3.5 sm:py-2 flex items-center gap-2 transition-transform active:scale-95 retro-shadow">
+          <i class="fa-solid fa-basket-shopping text-brandRed text-lg"></i>
+          <span class="hidden sm:inline font-brand text-xs uppercase">Order Cart</span>
+          <span class="cart-count-badge hidden absolute -top-2.5 -right-2.5 bg-brandRed text-white text-[11px] font-black w-6 h-6 rounded-full items-center justify-center border-2 border-neutral-900 shadow">
+            0
+          </span>
+        </button>
+
+        <!-- Order Now CTA -->
+        <a href="#menu" class="hidden sm:inline-flex retro-btn retro-btn-red text-sm px-5 py-2.5 rounded-xl font-brand">
+          ORDER NOW
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="openMobileMenuBtn" class="lg:hidden p-2 text-neutral-900 hover:text-brandRed text-2xl focus:outline-none">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div id="mobileMenuDrawer" class="fixed inset-0 z-50 bg-neutral-900/90 backdrop-blur-md flex flex-col p-6 hidden">
+    <div class="flex items-center justify-between pb-6 border-b border-neutral-800">
+      <img src="assets/images/brand-logo.png" alt="Hot Dog Nation" class="h-12 w-auto">
+      <button id="closeMobileMenuBtn" class="w-10 h-10 rounded-full bg-neutral-800 text-white flex items-center justify-center text-xl hover:bg-brandRed">
+        &times;
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col justify-center space-y-6 font-brand text-2xl uppercase tracking-wider text-center text-white">
+      <a href="#hero" class="mobile-nav-link hover:text-brandYellow">Home</a>
+      <a href="#bestsellers" class="mobile-nav-link hover:text-brandYellow">Favourities</a>
+      <a href="#menu" class="mobile-nav-link hover:text-brandYellow">Our Menu</a>
+      <a href="#byo" class="mobile-nav-link text-brandYellow">Build Your Own Dog</a>
+      <a href="#about" class="mobile-nav-link hover:text-brandYellow">About Us</a>
+      <a href="#gallery" class="mobile-nav-link hover:text-brandYellow">Food Gallery</a>
+      <a href="#contact" class="mobile-nav-link hover:text-brandYellow">Location & Hours</a>
+      <a href="admin.html" class="mobile-nav-link text-xs text-neutral-400 font-sans normal-case pt-4">Restaurant Staff Portal</a>
+    </nav>
+    <div class="pt-6 border-t border-neutral-800">
+      <a href="#menu" class="mobile-nav-link w-full block text-center retro-btn retro-btn-yellow py-3.5 rounded-xl text-lg font-brand">
+        BROWSE FULL MENU
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION C: HERO SECTION ================= -->
+    <section id="hero" class="relative overflow-hidden hero-pattern border-b-4 border-neutral-900 py-12 sm:py-20 lg:py-24">
+      
+      <!-- Decorative Background Flares -->
+      <div class="absolute -top-12 -left-12 w-64 h-64 bg-amber-300/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-16 -right-16 w-80 h-80 bg-red-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          
+          <!-- Hero Left Content -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+            
+            <!-- Campus / Location Pill & Live Open/Closed Status -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+              <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border-2 border-neutral-900 retro-shadow text-xs sm:text-sm font-extrabold uppercase tracking-wide">
+                <span class="w-2.5 h-2.5 rounded-full bg-brandRed animate-ping"></span>
+                <span>📍 LAW GATE, PHAGWARA</span>
+              </div>
+              <div id="heroStoreStatus" class="inline-flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border-2 border-neutral-900 retro-shadow text-xs sm:text-sm font-extrabold uppercase tracking-wide">
+                <span class="status-dot w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="status-text text-emerald-800">OPEN NOW (11:00 AM – 11:30 PM)</span>
+              </div>
+            </div>
+
+            <!-- Main Punchy Headline -->
+            <h1 class="font-brand text-4xl sm:text-6xl xl:text-7xl text-neutral-900 leading-[1.05] tracking-tight">
+              NOT JUST A HOT DOG.<br>
+              <span class="text-brandRed relative inline-block">
+                IT'S A WHOLE MOOD!
+                <svg class="w-full h-3 -mt-1 text-brandGreen" viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <path d="M0,5 Q25,0 50,5 T100,5" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </h1>
+
+            <!-- Supporting Text -->
+            <p class="text-base sm:text-lg text-neutral-800 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Loaded with flavour, packed with happiness, and made to satisfy every craving. Welcome to Hot Dog Nation, where every bite feels enough!
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#menu" class="w-full sm:w-auto retro-btn retro-btn-red text-base sm:text-lg px-8 py-4 rounded-2xl font-brand gap-2">
+                <i class="fa-solid fa-utensils"></i> EXPLORE OUR MENU
+              </a>
+              <a href="#byo" class="w-full sm:w-auto retro-btn retro-btn-dark text-base sm:text-lg px-8 py-4 rounded-2xl font-brand gap-2">
+                <i class="fa-solid fa-wand-magic-sparkles text-brandYellow"></i> BUILD YOUR OWN DOG
+              </a>
+            </div>
+
+            <!-- Value Props Badges -->
+            <div class="grid grid-cols-3 gap-3 pt-6 border-t-2 border-neutral-900/10 max-w-lg mx-auto lg:mx-0 text-center">
+              <div class="bg-white/90 p-3 rounded-xl border border-neutral-900 shadow-sm">
+                <span class="block font-brand text-xl sm:text-2xl text-brandRed">100%</span>
+                <span class="text-[11px] sm:text-xs font-bold text-neutral-700 uppercase">Loaded Dogs</span>
+              </div>
+              <div class="bg-white/90 p-3 rounded-xl border border-neutral-900 shadow-sm">
+                <span class="block font-brand text-xl sm:text-2xl text-brandGreen">₹100</span>
+                <span class="text-[11px] sm:text-xs font-bold text-neutral-700 uppercase">Starts At Only</span>
+              </div>
+              <div class="bg-white/90 p-3 rounded-xl border border-neutral-900 shadow-sm">
+                <span class="block font-brand text-xl sm:text-2xl text-neutral-900">10m</span>
+                <span class="text-[11px] sm:text-xs font-bold text-neutral-700 uppercase">Super Fast Prep</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Visual: High-Impact Loaded Hot Dog + Brand Mascot -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            
+            <!-- Large Mouthwatering Hot Dog Image Container -->
+            <div class="relative w-full max-w-md aspect-square rounded-3xl p-3 bg-white border-4 border-neutral-900 retro-shadow-lg overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=1000&auto=format&fit=crop&q=85" 
+                   alt="Loaded Hot Dog Nation Special" 
+                   class="w-full h-full object-cover rounded-2xl transform transition-transform duration-700 group-hover:scale-105">
+
+              <!-- Floating Hot Dog Mascot Integration -->
+              <div class="absolute -bottom-2 -left-2 w-32 sm:w-40 z-20 animate-float pointer-events-none drop-shadow-2xl">
+                <img src="assets/images/brand-logo.png" alt="Hot Dog Nation Mascot with Crown" class="w-full h-auto">
+              </div>
+
+              <!-- Top-Right Floating Badge -->
+              <div class="absolute top-4 right-4 bg-brandRed text-white px-3.5 py-1.5 rounded-xl border-2 border-neutral-900 font-brand text-xs sm:text-sm shadow-md rotate-3 uppercase">
+                🔥 LAW GATE'S BEST!
+              </div>
+
+              <!-- Bottom-Right Tagline Banner -->
+              <div class="absolute bottom-4 right-4 bg-brandDark/90 backdrop-blur-md text-brandYellow px-4 py-2 rounded-xl border border-brandYellow font-brand text-xs sm:text-sm tracking-wide">
+                EVERY BITE FEELS ENOUGH
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION D: OUR BESTSELLERS ================= -->
+    <section id="bestsellers" class="py-16 sm:py-24 bg-white border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="inline-block bg-brandYellow px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest border-2 border-neutral-900 retro-shadow mb-3">
+            ⭐ CROWD FAVORITES
+          </span>
+          <h2 class="font-brand text-3xl sm:text-5xl text-neutral-900 leading-tight">
+            THE NATION'S FAVOURITES
+          </h2>
+          <p class="text-neutral-600 font-medium text-base sm:text-lg mt-2">
+            Cravings don't wait. Neither should you!
+          </p>
+        </div>
+
+        <!-- Bestsellers Food Cards Grid (Injected via JS) -->
+        <div id="bestsellersGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <!-- Dynamically populated from menu-data.js -->
+        </div>
+
+        <!-- Section Bottom CTA -->
+        <div class="text-center mt-12">
+          <a href="#menu" class="retro-btn retro-btn-yellow text-base px-8 py-3.5 rounded-xl font-brand">
+            SEE ALL MENU ITEMS (PASTAS, MAGGI, SALADS) <i class="fa-solid fa-arrow-down ml-2"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION E: EXPLORE OUR MENU ================= -->
+    <section id="menu" class="py-16 sm:py-24 bg-[#FFFDF7] border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brandRed bg-red-50 border border-red-200 px-3 py-1 rounded-md">
+              FULL CRAVINGS CATALOGUE
+            </span>
+            <h2 class="font-brand text-3xl sm:text-5xl text-neutral-900 mt-2">
+              EXPLORE OUR MENU
+            </h2>
+            <p class="text-neutral-600 text-sm sm:text-base mt-1">
+              Exact authentic prices in Indian Rupees (₹). No hidden fees!
+            </p>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="w-full md:w-72">
+            <div class="relative">
+              <input type="text" id="menuSearchInput" placeholder="Search hot dogs, pastas..." 
+                     class="w-full pl-10 pr-4 py-2.5 bg-white border-2 border-neutral-900 rounded-xl text-sm font-semibold focus:outline-none focus:border-brandRed retro-shadow">
+              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-neutral-400"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Tabs & Diet Filters -->
+        <div class="space-y-4 mb-8">
+          
+          <!-- Category Tabs Navigation -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+            <button class="category-tab-btn active-tab retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="all">
+              ⭐ All Items
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="combos">
+              👑 Signature Combos
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="hotdogs">
+              🌭 Hot Dogs
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="burgers">
+              🍔 Burgers
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="sandwiches">
+              🥪 Sandwiches
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="wraps">
+              🌯 Wraps & Twisters
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="dimsums">
+              🥟 Dimsums
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="snacks">
+              🍗 Snacks
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="fries">
+              🍟 Fries & Corn
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="waffles">
+              🧇 Waffles
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="mocktails">
+              🍹 Mocktails
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="beverages">
+              🥤 Shakes & Coffee
+            </button>
+            <button class="category-tab-btn retro-btn text-xs sm:text-sm px-4 py-2.5 rounded-xl whitespace-nowrap bg-white text-neutral-900" data-category="desserts">
+              🍰 Desserts
+            </button>
+          </div>
+
+          <!-- Veg / Non-Veg Toggle Strip -->
+          <div class="flex items-center justify-between border-t border-neutral-200 pt-3">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold uppercase text-neutral-500 mr-1">Diet:</span>
+              <button class="veg-filter-btn active-pill px-3 py-1 rounded-lg text-xs font-bold border border-neutral-300 bg-neutral-900 text-white" data-filter="all">
+                All Diets
+              </button>
+              <button class="veg-filter-btn px-3 py-1 rounded-lg text-xs font-bold border border-emerald-600 bg-white text-emerald-700 hover:bg-emerald-50 flex items-center gap-1.5" data-filter="veg">
+                <span class="veg-indicator"></span> 100% Veg
+              </button>
+              <button class="veg-filter-btn px-3 py-1 rounded-lg text-xs font-bold border border-red-600 bg-white text-red-600 hover:bg-red-50 flex items-center gap-1.5" data-filter="nonveg">
+                <span class="nonveg-indicator"></span> Non-Veg
+              </button>
+            </div>
+
+            <div id="menuItemCount" class="text-xs font-bold text-neutral-500">
+              Loading cravings...
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Menu Product Cards Grid (Injected via JS) -->
+        <div id="menuGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Dynamically populated from menu-data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION F: SPECIAL FEATURE — BUILD YOUR OWN HOT DOG ================= -->
+    <section id="byo" class="py-16 sm:py-24 bg-brandYellow border-b-4 border-neutral-900 relative overflow-hidden">
+      
+      <!-- Graphic accents -->
+      <div class="absolute -top-12 -right-12 w-64 h-64 bg-amber-400/50 rounded-full blur-2xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="inline-block bg-white px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest border-2 border-neutral-900 retro-shadow mb-3">
+            🛠️ INTERACTIVE HOT DOG LAB
+          </span>
+          <h2 class="font-brand text-4xl sm:text-6xl text-neutral-900 leading-tight">
+            YOUR HOT DOG. YOUR RULES.
+          </h2>
+          <p class="text-neutral-900 font-semibold text-base sm:text-lg mt-2">
+            Customize your base, choose your sausage, layer melted cheese, bacon, and drizzle signature sauces!
+          </p>
+        </div>
+
+        <!-- Configurator Layout: Left Stage (Visual preview) + Right Controls -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Visual Simulator Card -->
+          <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl border-4 border-neutral-900 retro-shadow-lg sticky top-28 space-y-6">
+            
+            <div class="flex items-center justify-between border-b pb-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-neutral-400">Live Dog Preview</span>
+                <h4 class="font-brand text-xl text-neutral-900">Custom Creation</h4>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-bold text-neutral-500">Calculated Price</span>
+                <div id="byoTotalDisplay" class="font-brand text-3xl text-brandRed leading-none">
+                  ₹100
+                </div>
+              </div>
+            </div>
+
+            <!-- Simulated Visual Hot Dog Bun & Layers -->
+            <div class="bg-amber-50 rounded-2xl p-6 border-2 border-neutral-200 text-center relative py-12 flex flex-col items-center justify-center min-h-[220px]">
+              
+              <!-- Top Bun -->
+              <div class="w-60 h-10 rounded-t-full bg-amber-400 border-2 border-amber-600 shadow-sm mx-auto mb-1"></div>
+
+              <!-- Sauce Drizzle Layer (Toggleable) -->
+              <div id="byoVisualSauce" class="w-48 h-3 mx-auto z-20 pointer-events-none -my-1">
+                <svg viewBox="0 0 100 12" class="w-full h-full text-red-600">
+                  <path d="M0,6 Q12,0 25,6 T50,6 T75,6 T100,6" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <!-- Fresh Toppings Layer (Toggleable) -->
+              <div id="byoVisualToppings" class="flex justify-center gap-1.5 z-20 -my-1">
+                <span class="w-3 h-3 rounded-full bg-red-600 border border-neutral-900" title="Tomato"></span>
+                <span class="w-3 h-3 rounded-full bg-green-600 border border-neutral-900" title="Jalapeño"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-100 border border-neutral-900" title="Onion"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500 border border-neutral-900" title="Relish"></span>
+              </div>
+
+              <!-- Melted Cheese Layer (Toggleable) -->
+              <div id="byoVisualCheese" class="w-52 h-3 bg-yellow-300 border-t border-b border-yellow-500 rounded-full mx-auto -my-1 z-10 hidden shadow-inner"></div>
+
+              <!-- Crispy Bacon Layer (Toggleable) -->
+              <div id="byoVisualBacon" class="w-48 h-2.5 bg-red-800 border border-red-950 rounded mx-auto -my-1 z-10 hidden"></div>
+
+              <!-- Sausage / Patty Core -->
+              <div id="byoVisualFrank" class="w-52 h-8 rounded-full bg-red-700 border-2 border-red-950 mx-auto shadow-md flex items-center justify-center text-[10px] text-white font-bold tracking-wider">
+                GRILLED FRANK
+              </div>
+
+              <!-- Bottom Bun -->
+              <div class="w-60 h-10 rounded-b-full bg-amber-500 border-2 border-amber-700 shadow-md mx-auto mt-1"></div>
+
+            </div>
+
+            <!-- Real-time Selected Breakdown Tags -->
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase text-neutral-500">Your Current Recipe:</span>
+              <div id="byoBreakdownSummary" class="flex flex-wrap gap-1.5">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <!-- Add to Cart Action -->
+            <button id="byoAddToCartBtn" class="w-full retro-btn retro-btn-red text-base py-3.5 rounded-xl font-brand gap-2">
+              <i class="fa-solid fa-cart-plus"></i> ADD TO MY ORDER
+            </button>
+
+          </div>
+
+          <!-- Controls Accordion / Form -->
+          <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border-4 border-neutral-900 retro-shadow-lg space-y-8">
+            
+            <!-- Step 1: Base Selection -->
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-6 h-6 rounded-full bg-neutral-900 text-brandYellow text-xs font-black flex items-center justify-center">1</span>
+                <h4 class="font-brand text-lg text-neutral-900">CHOOSE YOUR BASE (₹100)</h4>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <button type="button" data-base="base-nonveg" class="byo-base-btn active-base p-4 rounded-xl border-2 border-neutral-900 text-left transition-all hover:bg-neutral-50">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-brand text-base text-neutral-900">Chicken Sausage</span>
+                    <span class="nonveg-indicator"></span>
+                  </div>
+                  <p class="text-xs text-neutral-500">Classic non-veg chicken frankfurter in warm toasted bun.</p>
+                </button>
+
+                <button type="button" data-base="base-veg" class="byo-base-btn p-4 rounded-xl border-2 border-neutral-300 text-left transition-all hover:bg-neutral-50">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-brand text-base text-neutral-900">Crispy Aloo Patty</span>
+                    <span class="veg-indicator"></span>
+                  </div>
+                  <p class="text-xs text-neutral-500">100% vegetarian deep-fried spiced homemade potato patty.</p>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Sausage Upgrade (Non-Veg only) -->
+            <div id="byoSausageContainer" class="transition-opacity">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-6 h-6 rounded-full bg-neutral-900 text-brandYellow text-xs font-black flex items-center justify-center">2</span>
+                <h4 class="font-brand text-lg text-neutral-900">YOUR CHOICE OF SAUSAGE</h4>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="radio" name="byoSausage" value="sausage-std" checked class="accent-red-600">
+                    <span class="font-bold text-neutral-800">Standard Sausage</span>
+                  </div>
+                  <span class="text-neutral-500 font-bold">Included</span>
+                </label>
+
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="radio" name="byoSausage" value="sausage-tandoori" class="accent-red-600">
+                    <span class="font-bold text-neutral-800">Tandoori Sausage</span>
+                  </div>
+                  <span class="text-red-600 font-bold">+₹20</span>
+                </label>
+
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="radio" name="byoSausage" value="sausage-cheese" class="accent-red-600">
+                    <span class="font-bold text-neutral-800">Cheese Sausage</span>
+                  </div>
+                  <span class="text-red-600 font-bold">+₹30</span>
+                </label>
+
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="radio" name="byoSausage" value="sausage-jumbo" class="accent-red-600">
+                    <span class="font-bold text-neutral-800">Jumbo Sausage</span>
+                  </div>
+                  <span class="text-red-600 font-bold">+₹100</span>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Step 3: Premium Add-Ons -->
+            <div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-6 h-6 rounded-full bg-neutral-900 text-brandYellow text-xs font-black flex items-center justify-center">3</span>
+                <h4 class="font-brand text-lg text-neutral-900">PREMIUM ADD-ONS</h4>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="cb-addon-cheese" data-addon="addon-cheese" class="byo-addon-cb accent-red-600">
+                    <span class="text-xs font-bold text-neutral-800">Melted Cheese</span>
+                  </div>
+                  <span class="text-xs text-red-600 font-bold">+₹10</span>
+                </label>
+
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="cb-addon-bacon" data-addon="addon-bacon" class="byo-addon-cb accent-red-600">
+                    <span class="text-xs font-bold text-neutral-800">Crispy Bacon</span>
+                  </div>
+                  <span class="text-xs text-red-600 font-bold">+₹50</span>
+                </label>
+
+                <label class="p-3 rounded-xl border border-neutral-300 flex items-center justify-between cursor-pointer hover:border-neutral-900 bg-neutral-50">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="cb-addon-extra-sausage" data-addon="addon-extra-sausage" class="byo-addon-cb accent-red-600">
+                    <span class="text-xs font-bold text-neutral-800">Extra Sausage</span>
+                  </div>
+                  <span class="text-xs text-red-600 font-bold">+₹50</span>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Step 4: Sauces (Included Free) -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-neutral-900 text-brandYellow text-xs font-black flex items-center justify-center">4</span>
+                  <h4 class="font-brand text-lg text-neutral-900">SIGNATURE SAUCES</h4>
+                </div>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">FREE CHOICE</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="sauce-mayo" checked class="byo-sauce-cb accent-red-600">
+                  <span>Mayonnaise</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="sauce-mustard" checked class="byo-sauce-cb accent-red-600">
+                  <span>Mustard</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="sauce-ketchup" checked class="byo-sauce-cb accent-red-600">
+                  <span>Ketchup</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="sauce-sriracha" class="byo-sauce-cb accent-red-600">
+                  <span>Sriracha</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="sauce-tandoori" class="byo-sauce-cb accent-red-600">
+                  <span>Tandoori Sauce</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 5: Fresh Garden Toppings -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-neutral-900 text-brandYellow text-xs font-black flex items-center justify-center">5</span>
+                  <h4 class="font-brand text-lg text-neutral-900">FRESH TOPPINGS</h4>
+                </div>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">INCLUDED</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-onions" checked class="byo-topping-cb accent-red-600">
+                  <span>Diced Onions</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-jalapenos" checked class="byo-topping-cb accent-red-600">
+                  <span>Jalapeños</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-tomatoes" class="byo-topping-cb accent-red-600">
+                  <span>Sliced Tomatoes</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-cucumber" class="byo-topping-cb accent-red-600">
+                  <span>Fresh Cucumber</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-relish" class="byo-topping-cb accent-red-600">
+                  <span>Sweet Relish</span>
+                </label>
+                <label class="p-2.5 rounded-lg border border-neutral-200 flex items-center gap-2 cursor-pointer hover:bg-neutral-50">
+                  <input type="checkbox" value="top-lettuce" class="byo-topping-cb accent-red-600">
+                  <span>Iceberg Lettuce</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION G: PROMOTIONAL SECTION ================= -->
+    <section class="py-16 sm:py-20 bg-brandDark text-white border-b-4 border-neutral-900 relative overflow-hidden dark-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-gradient-to-r from-red-600 to-amber-500 rounded-3xl p-8 sm:p-12 border-4 border-brandYellow retro-shadow-lg flex flex-col md:flex-row items-center justify-between gap-8">
+          
+          <div class="space-y-3 text-center md:text-left">
+            <span class="inline-block bg-brandYellow text-neutral-900 font-brand text-xs uppercase px-3 py-1 rounded-full border border-neutral-900">
+              ⚡ LAW GATE STUDENT SAVINGS
+            </span>
+            <h3 class="font-brand text-3xl sm:text-5xl text-white leading-tight">
+              GOOD FOOD. GREAT MOOD.<br>HOT DOG NATION!
+            </h3>
+            <p class="text-amber-100 font-medium text-base sm:text-lg max-w-xl">
+              One bite is all it takes to become a fan. Experience hot dogs like never before.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a href="#menu" class="retro-btn retro-btn-yellow text-base px-8 py-4 rounded-2xl font-brand whitespace-nowrap">
+              ORDER NOW ON WHATSAPP
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION H: ABOUT US SECTION ================= -->
+    <section id="about" class="py-16 sm:py-24 bg-white border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Visual / Mascot Photo Collage -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-full max-w-md aspect-[4/5] bg-brandYellow rounded-3xl border-4 border-neutral-900 p-4 retro-shadow-lg overflow-hidden flex flex-col items-center justify-center text-center">
+              <img src="assets/images/brand-logo.png" alt="Hot Dog Nation Mascot & Crown" class="w-64 h-auto drop-shadow-xl animate-float">
+              <div class="mt-4 bg-white px-5 py-2 rounded-xl border-2 border-neutral-900 font-brand text-sm tracking-wider uppercase">
+                👑 CROWNED BEST STREET DOGS
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brandGreen bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md">
+              OUR BRAND STORY
+            </span>
+            <h2 class="font-brand text-3xl sm:text-5xl text-neutral-900 leading-tight">
+              MORE THAN FOOD.<br>IT'S A NATION!
+            </h2>
+            <div class="space-y-4 text-neutral-700 text-base sm:text-lg leading-relaxed">
+              <p>
+                Welcome to <strong>Hot Dog Nation</strong>, your destination for delicious cravings at <strong>Law Gate, Phagwara</strong>. We bring together loaded hot dogs, flavour-packed pastas, comforting Maggi, refreshing beverages, fresh salads, and delicious treats.
+              </p>
+              <p>
+                Our goal is simple: <strong>serve satisfying food, create happy moments, and make every bite memorable</strong>. Whether you're heading back from classes, hanging out with friends, or studying late into the night, Hot Dog Nation has your cravings covered!
+              </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="flex items-start gap-3 p-3.5 rounded-xl bg-amber-50 border border-amber-200">
+                <i class="fa-solid fa-fire-burner text-brandRed text-xl mt-1"></i>
+                <div>
+                  <h5 class="font-brand text-base text-neutral-900">Freshly Grilled to Order</h5>
+                  <p class="text-xs text-neutral-600">Sausages and patties cooked hot off the grill with premium sauces.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200">
+                <i class="fa-solid fa-seedling text-brandGreen text-xl mt-1"></i>
+                <div>
+                  <h5 class="font-brand text-base text-neutral-900">Dedicated Veg Options</h5>
+                  <p class="text-xs text-neutral-600">Separate preparation for our homemade crispy aloo patties and salads.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="#contact" class="retro-btn retro-btn-yellow text-sm px-6 py-3 rounded-xl font-brand">
+                VISIT US AT LAW GATE <i class="fa-solid fa-location-arrow ml-1.5"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION I: FOOD GALLERY ================= -->
+    <section id="gallery" class="py-16 sm:py-24 bg-[#FFFDF7] border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="inline-block bg-brandYellow px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest border-2 border-neutral-900 retro-shadow mb-3">
+            📸 FOOD & CRAVINGS IN FRAME
+          </span>
+          <h2 class="font-brand text-3xl sm:text-5xl text-neutral-900">
+            THE CRAVINGS GALLERY
+          </h2>
+          <p class="text-neutral-600 text-sm sm:text-base mt-2">
+            Click any picture to expand in high-definition lightbox zoom.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Chicago Loaded Street Hot Dog">
+            <img src="https://images.unsplash.com/photo-1541214113241-21578d2d9b62?w=800&auto=format&fit=crop&q=80" alt="Chicago Style Hot Dog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Chicago Loaded Dog</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Classic Chicken Sausage Hot Dog with Mustard & Ketchup">
+            <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=800&auto=format&fit=crop&q=80" alt="Classic Hot Dog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Classic Dog</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Arrabiata Spicy Penne Pasta Bowl">
+            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=800&auto=format&fit=crop&q=80" alt="Arrabiata Pasta" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Arrabiata Pasta</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Creamy White Sauce Alfredo Penne">
+            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=800&auto=format&fit=crop&q=80" alt="Alfredo Pasta" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">White Alfredo</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Street-Style Steaming Cheesy Maggi">
+            <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?w=800&auto=format&fit=crop&q=80" alt="Cheesy Maggi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Cheese Maggi</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Crispy Sweet Corn & Bell Pepper Salad">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop&q=80" alt="Corn Salad" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Fresh Corn Salad</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Chilled Mint Lemon Iced Tea Cooler">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&auto=format&fit=crop&q=80" alt="Lemon Iced Tea" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Lemon Iced Tea</span>
+            </div>
+          </div>
+
+          <div class="gallery-card group relative aspect-square rounded-2xl overflow-hidden border-2 border-neutral-900 retro-shadow cursor-pointer bg-neutral-100" data-caption="Original Hot Dog Nation Mascot & Crown Artwork">
+            <img src="assets/images/brand-logo.png" alt="Hot Dog Nation Mascot Artwork" class="w-full h-full object-contain p-4 bg-amber-100 transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-neutral-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-3 text-center">
+              <span class="text-white font-brand text-sm">Brand Mascot</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION J: LOCATION AND CONTACT ================= -->
+    <section id="contact" class="py-16 sm:py-24 bg-white border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="inline-block bg-brandRed text-white px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest border-2 border-neutral-900 retro-shadow mb-3">
+            📍 FIND THE NATION
+          </span>
+          <h2 class="font-brand text-3xl sm:text-5xl text-neutral-900">
+            COME HUNGRY. LEAVE HAPPY.
+          </h2>
+          <p class="text-neutral-600 text-sm sm:text-base mt-2">
+            Located right at Law Gate, Phagwara. Drop in or order online for prompt campus delivery!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Contact & Info Cards -->
+          <div class="lg:col-span-5 space-y-4 flex flex-col justify-between">
+            
+            <div class="p-5 rounded-2xl bg-amber-50 border-2 border-neutral-900 retro-shadow">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-brandRed text-white flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="font-brand text-lg text-neutral-900">Restaurant Location</h4>
+                  <p class="info-address-text text-sm font-semibold text-neutral-700 mt-0.5">
+                    Law Gate, Phagwara, Punjab, India
+                  </p>
+                  <a href="https://maps.google.com/?q=Law+Gate+Phagwara+Punjab+India" target="_blank" class="info-maps-link inline-flex items-center text-xs font-bold text-brandRed hover:underline mt-2">
+                    Get Directions on Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white border-2 border-neutral-900 retro-shadow">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-brandGreen text-white flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <h4 class="font-brand text-lg text-neutral-900">Direct WhatsApp Orders</h4>
+                  <p class="text-xs text-neutral-600 mt-0.5">Place your order directly with the kitchen staff.</p>
+                  <a href="https://wa.me/919876543210" target="_blank" class="info-whatsapp-link inline-flex items-center gap-1.5 retro-btn retro-btn-green text-xs px-4 py-2 rounded-lg font-brand mt-3">
+                    <i class="fa-brands fa-whatsapp"></i> Chat & Order on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-neutral-50 border-2 border-neutral-900 retro-shadow">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-neutral-900 text-brandYellow flex items-center justify-center text-lg shrink-0">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="font-brand text-lg text-neutral-900">Operating Hours</h4>
+                  <p class="info-hours-text text-sm font-semibold text-neutral-700 mt-0.5">
+                    11:00 AM – 11:30 PM Daily (Mon - Sun)
+                  </p>
+                  <span class="inline-block mt-2 text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">
+                    ● NOW SERVING HOT ORDERS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="lg:col-span-7 bg-neutral-100 rounded-3xl border-4 border-neutral-900 retro-shadow overflow-hidden min-h-[360px] relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13645.719702213035!2d75.69612028688432!3d31.250551067253572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5f40398863%3A0xe212891d4e0e6c5a!2sLaw%20Gate%20Rd%2C%20Punjab%20144411!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              class="w-full h-full min-h-[360px] border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION L: INSTAGRAM & SOCIAL MEDIA ================= -->
+    <section class="py-16 bg-brandYellow border-b-4 border-neutral-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="max-w-xl mx-auto mb-10">
+          <span class="inline-block bg-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider border-2 border-neutral-900 retro-shadow mb-2">
+            📸 @HOTDOGNATION.IN
+          </span>
+          <h3 class="font-brand text-3xl sm:text-5xl text-neutral-900">
+            JOIN THE HOT DOG NATION!
+          </h3>
+          <p class="text-neutral-900 font-semibold text-sm sm:text-base mt-2">
+            Tag us in your food stories and share your loaded moments with the nation.
+          </p>
+        </div>
+
+        <!-- Social Grid (6 Photos) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-8">
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=400&auto=format&fit=crop&q=80" alt="Hot Dog" class="w-full h-full object-cover hover:scale-110 transition-transform">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1541214113241-21578d2d9b62?w=400&auto=format&fit=crop&q=80" alt="Chicago Dog" class="w-full h-full object-cover hover:scale-110 transition-transform">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=400&auto=format&fit=crop&q=80" alt="Pasta" class="w-full h-full object-cover hover:scale-110 transition-transform">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?w=400&auto=format&fit=crop&q=80" alt="Maggi" class="w-full h-full object-cover hover:scale-110 transition-transform">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&auto=format&fit=crop&q=80" alt="Beverage" class="w-full h-full object-cover hover:scale-110 transition-transform">
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden border-2 border-neutral-900 retro-shadow bg-white">
+            <img src="assets/images/brand-logo.png" alt="Hot Dog Mascot" class="w-full h-full object-contain p-2 hover:scale-110 transition-transform">
+          </div>
+        </div>
+
+        <a href="https://instagram.com/hotdognation.in/" target="_blank" class="info-instagram-link inline-flex items-center gap-2 retro-btn retro-btn-dark px-8 py-3.5 rounded-xl font-brand text-sm">
+          <i class="fa-brands fa-instagram text-brandYellow text-lg"></i> FOLLOW US ON INSTAGRAM
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SECTION M: FOOTER ================= -->
+  <footer class="bg-brandDark text-white pt-16 pb-12 border-t-4 border-brandYellow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-neutral-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/brand-logo.png" alt="Hot Dog Nation" class="h-16 w-auto bg-white rounded-lg p-1.5 border border-yellow-400">
+            <div>
+              <h3 class="font-brand text-2xl text-brandYellow leading-none">HOT DOG NATION</h3>
+              <span class="text-xs font-extrabold text-red-500 uppercase tracking-widest">EVERY BITE FEELS ENOUGH</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-400 max-w-sm leading-relaxed">
+            Loaded hot dogs, comforting pastas, desi Maggi bowls, chilled beverages, and wholesome salads at Law Gate, Phagwara, Punjab.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://wa.me/919876543210" target="_blank" class="info-whatsapp-link w-9 h-9 rounded-lg bg-neutral-800 hover:bg-emerald-600 flex items-center justify-center text-sm transition-colors" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/hotdognation.in/" target="_blank" class="info-instagram-link w-9 h-9 rounded-lg bg-neutral-800 hover:bg-pink-600 flex items-center justify-center text-sm transition-colors" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://maps.google.com/?q=Law+Gate+Phagwara+Punjab+India" target="_blank" class="info-maps-link w-9 h-9 rounded-lg bg-neutral-800 hover:bg-brandRed flex items-center justify-center text-sm transition-colors" title="Google Maps">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-brand text-sm text-brandYellow uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs font-semibold text-neutral-400">
+            <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#bestsellers" class="hover:text-white transition-colors">Nation's Favourites</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Explore Menu</a></li>
+            <li><a href="#byo" class="text-amber-400 hover:text-white transition-colors">Build Your Own</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About Story</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Location & Hours</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-brand text-sm text-brandYellow uppercase tracking-wider">Menu Categories</h4>
+          <ul class="space-y-2 text-xs font-semibold text-neutral-400">
+            <li><a href="#menu" class="hover:text-white transition-colors">Hot Dogs (₹100+)</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Pastas (₹80+)</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Maggi (₹50+)</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Salads (₹50+)</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Beverages (₹20+)</a></li>
+            <li><a href="#menu" class="hover:text-white transition-colors">Add Ons (₹10+)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Info & Admin -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-brand text-sm text-brandYellow uppercase tracking-wider">Store Info</h4>
+          <div class="space-y-2 text-xs text-neutral-400">
+            <p class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-brandRed mt-0.5"></i>
+              <span class="info-address-text">Law Gate, Phagwara, Punjab, India</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-clock text-brandYellow"></i>
+              <span class="info-hours-text">11:00 AM – 11:30 PM Daily</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-emerald-400"></i>
+              <span class="info-phone-text">+91 98765 43210</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <a href="admin.html" class="inline-flex items-center gap-1.5 text-[11px] font-bold text-neutral-500 hover:text-brandYellow transition-colors">
+              <i class="fa-solid fa-lock"></i> Staff & Owner Admin Portal
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+        <p>© 2026 HOT DOG NATION. All rights reserved. Made for Law Gate & LPU food lovers.</p>
+        <p class="font-bold text-neutral-400">Tagline: "EVERY BITE FEELS ENOUGH"</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= SECTION K: CART DRAWER ================= -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+    <!-- Backdrop overlay -->
+    <div id="cartDrawerBackdrop" class="drawer-backdrop absolute inset-0 opacity-0 transition-opacity duration-300"></div>
+
+    <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+      <div id="cartDrawerPanel" class="drawer-content w-screen max-w-md bg-white border-l-4 border-neutral-900 flex flex-col justify-between translate-x-full shadow-2xl">
+        
+        <!-- Cart Top Header -->
+        <div class="p-5 bg-brandYellow border-b-2 border-neutral-900 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-basket-shopping text-xl text-brandRed"></i>
+            <h3 class="font-brand text-xl text-neutral-900">YOUR CRAVINGS CART</h3>
+          </div>
+          <button id="closeCartBtn" class="w-8 h-8 rounded-full bg-neutral-900 text-white flex items-center justify-center font-bold hover:bg-brandRed">
+            &times;
+          </button>
+        </div>
+
+        <!-- Cart Items Scroll Area -->
+        <div class="flex-1 overflow-y-auto p-5">
+          
+          <!-- Empty State -->
+          <div id="cartEmptyState" class="py-16 text-center space-y-3">
+            <div class="w-20 h-20 mx-auto rounded-full bg-amber-100 flex items-center justify-center text-4xl">
+              🌭
+            </div>
+            <h4 class="font-brand text-xl text-neutral-900">YOUR CART IS HUNGRY!</h4>
+            <p class="text-neutral-500 text-xs max-w-xs mx-auto">
+              You haven't added any loaded hot dogs or delicious pasta yet.
+            </p>
+            <button onclick="window.HOTDOG_NATION_APP.closeCart()" class="retro-btn retro-btn-yellow text-xs px-5 py-2.5 rounded-xl font-brand mt-2">
+              BROWSE BESTSELLERS
+            </button>
+          </div>
+
+          <!-- Filled Items Container -->
+          <div id="cartFilledState" class="space-y-3 hidden">
+            <div id="cartItemsList" class="space-y-3">
+              <!-- Dynamically populated from JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cart Summary & Checkout Footer -->
+        <div class="p-5 border-t-2 border-neutral-200 bg-neutral-50 space-y-3">
+          <div class="space-y-1.5 text-xs">
+            <div class="flex justify-between text-neutral-600 font-semibold">
+              <span>Subtotal:</span>
+              <span id="cartSubtotalText">₹0</span>
+            </div>
+            <div class="flex justify-between text-neutral-600 font-semibold">
+              <span>Delivery Fee (Law Gate / LPU):</span>
+              <span id="cartDeliveryFeeText" class="text-emerald-600 font-bold">FREE</span>
+            </div>
+            <div class="flex justify-between text-base font-brand text-neutral-900 pt-2 border-t border-neutral-300">
+              <span>ESTIMATED TOTAL:</span>
+              <span id="cartTotalText" class="text-brandRed text-xl">₹0</span>
+            </div>
+          </div>
+
+          <button id="checkoutBtn" class="w-full retro-btn retro-btn-red text-base py-3.5 rounded-xl font-brand gap-2">
+            PROCEED TO CHECKOUT <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <p class="text-[10px] text-center text-neutral-400">
+            Free fast delivery across Law Gate on orders above ₹199.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CHECKOUT MODAL ================= -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 bg-neutral-900/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl border-4 border-neutral-900 p-6 sm:p-8 max-w-lg w-full retro-shadow-lg max-h-[90vh] overflow-y-auto">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-neutral-200 mb-5">
+        <div>
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-brandRed">STEP 2 OF 2</span>
+          <h3 class="font-brand text-2xl text-neutral-900">CONFIRM & ORDER</h3>
+        </div>
+        <button id="closeCheckoutBtn" class="text-neutral-400 hover:text-black font-bold text-2xl leading-none">&times;</button>
+      </div>
+
+      <form id="checkoutForm" class="space-y-4">
+        
+        <!-- Name & Phone -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Your Full Name *</label>
+            <input type="text" id="customerNameInput" required placeholder="e.g. Rahul Sharma" class="w-full p-2.5 border-2 border-neutral-300 rounded-xl text-sm font-semibold focus:border-brandRed focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Phone Number *</label>
+            <input type="tel" id="customerPhoneInput" required placeholder="e.g. 9876543210" class="w-full p-2.5 border-2 border-neutral-300 rounded-xl text-sm font-semibold focus:border-brandRed focus:outline-none">
+          </div>
+        </div>
+
+        <!-- Order Type: Delivery vs Pickup -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1.5">Order Preference</label>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="p-3 rounded-xl border-2 border-neutral-900 flex items-center gap-2 cursor-pointer bg-amber-50">
+              <input type="radio" name="orderType" value="delivery" checked class="accent-red-600">
+              <span class="text-xs font-bold text-neutral-900">🚚 Campus Delivery</span>
+            </label>
+            <label class="p-3 rounded-xl border-2 border-neutral-300 flex items-center gap-2 cursor-pointer bg-white">
+              <input type="radio" name="orderType" value="pickup" class="accent-red-600">
+              <span class="text-xs font-bold text-neutral-900">🛍️ Counter Pickup</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Delivery Address Input -->
+        <div id="deliveryAddressWrapper">
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Delivery Address (Hostel / Flat / Law Gate Point) *</label>
+          <textarea id="deliveryAddressInput" rows="2" placeholder="e.g. BH-4, Room 302, LPU or Law Gate Street #2" class="w-full p-2.5 border-2 border-neutral-300 rounded-xl text-xs font-medium focus:border-brandRed focus:outline-none"></textarea>
+        </div>
+
+        <!-- Special Instructions -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-neutral-700 mb-1">Special Instructions (Optional)</label>
+          <input type="text" id="orderNotesInput" placeholder="e.g. Extra spicy, call before delivery" class="w-full p-2.5 border-2 border-neutral-300 rounded-xl text-xs font-medium focus:border-brandRed focus:outline-none">
+        </div>
+
+        <!-- Order Total Summary Card -->
+        <div class="p-4 rounded-xl bg-neutral-100 border border-neutral-300" id="checkoutModalSummary">
+          <!-- Injected via JS -->
+        </div>
+
+        <!-- Submit Button: WhatsApp Direct Dispatch -->
+        <button type="submit" id="submitWhatsAppBtn" class="w-full retro-btn retro-btn-green py-3.5 rounded-xl font-brand text-base gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> SEND ORDER VIA WHATSAPP
+        </button>
+
+        <p class="text-[10px] text-center text-neutral-500">
+          Clicking sends your formatted order directly to Hot Dog Nation's kitchen on WhatsApp for instant confirmation.
+        </p>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX MODAL FOR GALLERY ================= -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 lightbox-modal flex items-center justify-center p-4 hidden">
+    <button id="closeLightboxBtn" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center text-2xl hover:bg-brandRed transition-colors">
+      &times;
+    </button>
+    <div class="max-w-4xl w-full text-center space-y-4">
+      <img id="lightboxImg" src="" alt="Enlarged Food Photography" class="max-h-[80vh] max-w-full mx-auto rounded-2xl border-4 border-brandYellow shadow-2xl object-contain">
+      <p id="lightboxCaption" class="text-white font-brand text-lg tracking-wide"></p>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
